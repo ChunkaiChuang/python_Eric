@@ -1,0 +1,40 @@
+Project 2:
+1.Project 2 will still be focused on creating Book API Endpoints
+2.Continued Education includes:
+    GET, POST, PUT, DELETE Request Methods
+3.New Information will include:
+    Data Validation, Exception Handling, Status Codes, Swagger Configuration, Python Request Objects
+
+
+Creating a new books project
+1. We will create a new calls called books
+2. We will be using these books throughtout this project
+    class Book:
+        idL int 
+        title: str
+        author: str
+        description: str
+        rating: int
+    def __init__(self, id, title, author, description, rating):
+        self.id = id
+        self.title = title
+        self.author = author
+        self.description = description
+        self.rating = rating
+    
+    CRUD      HTTP Request Methods
+    Create -> POST
+    Read   -> GET
+    Update -> PUT
+    Delete -> DELETE
+
+FastAPI is now compatible with both Pydantic v1 and Pydantic v2.
+
+Based on how new the version of FastAPI you are using, there could be small method name changes.
+
+The three biggest are:
+1.".dict()" function is now renamed to ".model_dump()"
+2."schema_extra" function within a Config class is now renamed to "json_schema_extra"
+3.Optional variables need a "=None" example: "id: Optional[int] = None"
+
+
